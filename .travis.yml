@@ -11,6 +11,7 @@ env:
   global:
     - BUNDLE_JOBS=4
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - QMAKE=/usr/lib/x86_64-linux-gnu/qt4/bin/qmake
 addons:
   apt:
     sources:
