@@ -1,6 +1,10 @@
 sudo: required
 dist: trusty
 language: ruby
+addons:
+  hosts:
+    - example.com
+    - www.example.com
 rvm:
   - 1.9.3
   - 2.1
