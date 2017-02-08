@@ -1,10 +1,6 @@
 sudo: required
 dist: trusty
 language: ruby
-addons:
-  hosts:
-    - example.com
-    - www.example.com
 rvm:
   - 1.9.3
   - 2.1
@@ -26,6 +22,9 @@ addons:
     packages:
       - libqt5webkit5-dev
       - qtdeclarative5-dev
+  hosts:
+    - example.com
+    - www.example.com
 matrix:
   include:
     - rvm: 1.9.3
