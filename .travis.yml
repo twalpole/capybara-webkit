@@ -43,4 +43,5 @@ gemfile:
   - gemfiles/2.11.gemfile
 before_install:
   - gem install bundler
+  - cat /etc/hosts
 install: bundle
