@@ -22,9 +22,6 @@ addons:
     packages:
       - libqt5webkit5-dev
       - qtdeclarative5-dev
-  hosts:
-    - example.com
-    - www.example.com
 matrix:
   include:
     - rvm: 1.9.3
@@ -42,6 +39,6 @@ gemfile:
   - gemfiles/2.11.gemfile
 before_install:
   - gem install bundler
-  - ping www.example.com
+  - ping -t 10 www.example.com
   - cat /etc/hosts
 install: bundle
