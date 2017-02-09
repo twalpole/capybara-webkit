@@ -42,7 +42,6 @@ gemfile:
   - gemfiles/2.11.gemfile
 before_install:
   - gem install bundler
-  - sudo echo "93.184.216.34   example.com" >> /etc/hosts
-  - sudo echo "93.184.216.34   www.example.com" >> /etc/hosts
+  - ping www.example.com
   - cat /etc/hosts
 install: bundle
