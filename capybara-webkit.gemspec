@@ -31,5 +31,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency("rake", "< 12.0.0")
   s.add_development_dependency("appraisal", "~> 0.4.0")
   s.add_development_dependency("launchy")
+  s.add_development_dependency("byebug")
 end
 

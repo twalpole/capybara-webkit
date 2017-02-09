@@ -2817,7 +2817,7 @@ CACHE MANIFEST
     end
   end
 
-  describe "url whitelisting", skip_if_offline: true do
+  describe "url whitelisting", skip_if_offline: true, focus_: true do
     it_behaves_like "output writer" do
       let(:driver) do
         driver_for_html(<<-HTML)

@@ -13,6 +13,7 @@ GEM
     appraisal (0.4.1)
       bundler
       rake
+    byebug (9.0.6)
     capybara (2.11.0)
       addressable
       mime-types (>= 1.16)
@@ -66,6 +67,7 @@ PLATFORMS
 
 DEPENDENCIES
   appraisal (~> 0.4.0)
+  byebug
   capybara-webkit!
   json (< 2.0)
   launchy
@@ -76,4 +78,4 @@ DEPENDENCIES
   sinatra
 
 BUNDLED WITH
-   1.13.6
+   1.14.3

@@ -42,5 +42,7 @@ gemfile:
   - gemfiles/2.11.gemfile
 before_install:
   - gem install bundler
+  - echo "93.184.216.34   example.com" >> /etc/hosts
+  - echo "93.184.216.34   www.example.com" >> /etc/hosts
   - cat /etc/hosts
 install: bundle
