@@ -39,6 +39,7 @@ gemfile:
   - gemfiles/2.11.gemfile
 before_install:
   - gem install bundler
-  - ping -t 10 www.example.com
+  - wget www.example.com -O -
+  - wget example.com -O -
   - cat /etc/hosts
 install: bundle
