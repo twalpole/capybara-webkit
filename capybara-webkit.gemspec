@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
   # Sinatra is used by Capybara's TestApp
   s.add_development_dependency("sinatra")
   s.add_development_dependency("mini_magick")
-  s.add_development_dependency("rake", "< 12.0.0")
+  s.add_development_dependency("rake")
   s.add_development_dependency("appraisal")
   s.add_development_dependency("launchy")
 end
