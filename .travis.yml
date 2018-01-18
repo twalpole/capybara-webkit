@@ -2,8 +2,8 @@ sudo: required
 dist: trusty
 language: ruby
 rvm:
-  - 2.2
-  - 2.4
+  # - 2.2
+  # - 2.4
   - 2.5
 notifications:
   email: false
@@ -23,19 +23,20 @@ addons:
       - qtdeclarative5-dev
 matrix:
   include:
-    - rvm: 1.9.3
-      gemfile: gemfiles/2.15.gemfile
-      env: QMAKE=/usr/lib/x86_64-linux-gnu/qt4/bin/qmake
-    - rvm: jruby-19mode
-      gemfile: gemfiles/2.15.gemfile
-    - rvm: 2.3.3
-      gemfile: gemfiles/master.gemfile
-    - rvm: jruby-9.1.13.0
-      gemfile: Gemfile
+    # - rvm: 1.9.3
+    #   gemfile: gemfiles/2.15.gemfile
+    #   env: QMAKE=/usr/lib/x86_64-linux-gnu/qt4/bin/qmake
+    # - rvm: jruby-19mode
+    #   gemfile: gemfiles/2.15.gemfile
+    # - rvm: 2.3.3
+    #   gemfile: gemfiles/master.gemfile
+    # - rvm: jruby-9.1.13.0
+    #   gemfile: Gemfile
   allow_failures:
     - gemfile: gemfiles/master.gemfile
 gemfile:
   - Gemfile
 before_install:
   - gem install bundler
+  - build_qt_webkit
 install: bundle
