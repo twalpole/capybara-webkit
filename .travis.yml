@@ -3,8 +3,8 @@ dist: xenial
 language: ruby
 rvm:
   # - 2.2
-  # - 2.4
-  - 2.5
+  - 2.4
+  # - 2.5
 notifications:
   email: false
 script: xvfb-run bundle exec rake
@@ -38,7 +38,7 @@ gemfile:
   - Gemfile
 before_install:
   - gem install bundler
-  - sudo apt-get install --allow-unauthenticated build-essential perl python ruby flex gperf bison cmake ninja-build libfontconfig1-dev libicu-dev libsqlite3-dev zlib1g-dev libpng12-dev libjpeg-dev libxslt1-dev libxml2-dev libhyphen-dev
+  - sudo apt-get install --allow-unauthenticated qtdeclarative5-dev build-essential perl python ruby flex gperf bison cmake ninja-build libfontconfig1-dev libicu-dev libsqlite3-dev zlib1g-dev libpng12-dev libjpeg-dev libxslt1-dev libxml2-dev libhyphen-dev
   - git clone https://github.com/annulen/webkit.git -b qtwebkit-5.212 --depth 1
   - cd webkit
   - mkdir -p WebKitBuild/Release
