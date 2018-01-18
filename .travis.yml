@@ -19,7 +19,7 @@ addons:
     sources:
       - ubuntu-sdk-team
     packages:
-      - libqt5webkit5-dev
+      # - libqt5webkit5-dev
       - qtdeclarative5-dev
 matrix:
   include:
