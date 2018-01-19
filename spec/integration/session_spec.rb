@@ -9,6 +9,8 @@ end
 
 Capybara::SpecHelper.run_specs TestSessions::Webkit, "webkit"
 
+puts "Versions are: #{TestSessions::Webkit.driver.version}"
+
 describe Capybara::Session do
   include AppRunner
   include Capybara::RSpecMatchers
